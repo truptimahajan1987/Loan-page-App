@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Page Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="createNewCaptcha()">
+    <div class="container">
+        <h1>Loan Page Application </h1>
+        <form action="" method="post" class="form" name="myform">
+            <div class="form-group">
+                <label for="name">Enter Full Nane : </label>
+                <input type="text" name="name" id="name" class="form-control input-name"
+                    onkeypress="return onlyAlphabets()"><span class="span-name"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Id : </label>
+                <input type="email" name="email" id="email" class="form-control input-email"><span class="span-email"></span>
+            </div>
+            <div class="form-group">
+                <label for="number">Loan Amount : </label>
+                <input type="number" name="number" id="number" class="form-control input-ammount" ><span class="span-number"></span>
+            </div>
+            <div class="form-group">
+                <label for="pancard">Pan Card : </label>
+                <input type="text" name="pancard" id="panCard" class="form-control input-pancard"><span
+                    class="span-pancard"></span>
+            </div>
+            <div class="form-group">
+                <label for="captchainput">Enter Captcha : </label>
+                <input type="text" name="captcha" id="captchainput" class="form-control input-captcha"><span
+                    class="span-captcha"></span>
+                <div class="captchatext">
+                    <p class="text" id="newCaptcha"></p>
+                    <button class="btn btncaptcha" onclick="createNewCaptcha()">New Captcha</button>
+                </div>
+
+            </div>
+            <div class="form-group">
+
+                <input type="submit" value="submit" class="btnsubmit">
+
+            </div>
+
+
+        </form>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

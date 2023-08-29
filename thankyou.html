@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      font-size: 23px;
+    }
+    #enterOTP{
+      margin: 20px 0px;
+    }
+    #enterOTP{
+      padding: 5px;
+      font-size: 18px;
+    }
+    .verifiedOTP{
+      color: red;
+      margin: 10px 0px;
+      font-size: 19px;
+    }
+    .btn{
+      margin: 10px 0px;
+    }
+  </style>
+
+<body onload="generateOTP()">
+  <div class="container">
+    <div class="msg">
+      <p >Dear, <b><span class="fetch-name"> </span></b> <br>Thank you for your inquiry. A 4 digit verification number
+        has been sent to your email : <b><span class="fetch-email"></span></b>
+        Please enter it in the following box and submit for confirmation.
+      </p>
+      <div class="divOTP"  style="font-size: 25px">
+        <label for="enter-OTP">Enter OTP : </label>
+        <input type="number" name="" id="enterOTP" class="enter-OTP" ><br>
+        <span class="verifiedOTP"></span>
+        <br>
+        <button class="btn" onclick="isVerifiedOTP()" >Send</button>
+        <button class="btn" onclick="generateOTP()">New OTP</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
